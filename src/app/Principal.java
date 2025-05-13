@@ -32,7 +32,8 @@ public class Principal {
 		Segmento segmento1 = new Segmento(puntoA,puntoB);
 		Segmento segmento2 = new Segmento(puntoC,puntoD);
 		
-		
+		double distancia1 = segmento1.distancia();
+		double distancia2 = segmento2.distancia();
 
 	}
 
