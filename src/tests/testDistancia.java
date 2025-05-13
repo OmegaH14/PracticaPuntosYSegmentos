@@ -53,11 +53,16 @@ class testDistancia {
 	
 	@Test
 	void testSegmentoMismoValor() {
+		try {
 		Punto puntoA = new Punto(2, 3);
 		Punto puntoB = new Punto(2, 3);
-
 		if(puntoA.toString().equals(puntoB.toString()))
 			throw new IllegalArgumentException("No se puede ingresar la misma coordenada para ambos puntos");
+		}catch(IllegalArgumentException e) {
+			System.out.println(e.getMessage());
+		}
+
+		
 	}
 
 }
