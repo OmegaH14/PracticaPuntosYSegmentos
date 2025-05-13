@@ -22,18 +22,10 @@ public class Segmento {
 	 * Constructor donde inserto Puntos de la clase Punto para asignarselos a mis variables puntoA y puntoB
 	 */
 	public Segmento(Punto a, Punto b) {
-		
-		try {
-			
-			if(a.toString().equals(b.toString()))
-				throw new IllegalArgumentException("No se puede ingresar la misma coordenada para ambos puntos");
-			
+
 			this.puntoA = a;
 			this.puntoB = b;
-			
-		}catch(IllegalArgumentException e) {
-			System.out.println(e.getMessage());
-		}
+		
 	}
 	
 	/**
